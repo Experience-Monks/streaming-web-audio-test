@@ -23,7 +23,7 @@
   "scripts": {
     "test": "node test.js",
     "start": "budo demo.js:bundle.js --live",
-    "build": "browserify index.js | uglifyjs -cm > bundle.js"
+    "build": "browserify demo.js | uglifyjs -cm > bundle.js"
   },
   "keywords": [
     "stream",
