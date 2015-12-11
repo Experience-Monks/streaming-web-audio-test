@@ -1,0 +1,50 @@
+{
+  "name": "streaming-web-audio-test",
+  "version": "1.0.0",
+  "description": "stream a source into WebAudio buffers for mobile playback",
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Matt DesLauriers",
+    "email": "dave.des@gmail.com",
+    "url": "https://github.com/mattdesl"
+  },
+  "dependencies": {
+    "buffer-to-arraybuffer": "0.0.2",
+    "inherits": "^2.0.1",
+    "readable-stream": "^2.0.4",
+    "simple-get": "^1.4.3"
+  },
+  "devDependencies": {
+    "browserify": "^12.0.1",
+    "budo": "^7.0.2",
+    "uglify-js": "^2.6.1"
+  },
+  "scripts": {
+    "test": "node test.js",
+    "start": "budo demo.js:bundle.js --live",
+    "build": "browserify index.js | uglifyjs -cm > bundle.js"
+  },
+  "keywords": [
+    "stream",
+    "web",
+    "audio",
+    "playback",
+    "mobile",
+    "streaming",
+    "streams",
+    "media",
+    "element",
+    "source",
+    "tag",
+    "elements"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Jam3/streaming-web-audio-test.git"
+  },
+  "homepage": "https://github.com/Jam3/streaming-web-audio-test",
+  "bugs": {
+    "url": "https://github.com/Jam3/streaming-web-audio-test/issues"
+  }
+}
